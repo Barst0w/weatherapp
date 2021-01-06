@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: cornsilk;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    width: auto;
+    background-color: lightseagreen;
+}
+
+#inputForm {
+    display: flex;
+    justify-content: center;
+}
+
+#inputBox {
+    height: 25px;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+}
+
+#inputBtn {
+    height: 25px;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+}
+
+.dataDiv {
+    grid-template-rows: auto;
+    height: 250px;
+    width: 200px;
+    background-color: lightpink;
+}
+
+.locationElement {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    grid-row: 1 / 1;
+}
+
+.tempElement {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    grid-row: 3 / 3;
+}
+
+.weatherElement {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    grid-row: 4 / 4;
+}

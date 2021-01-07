@@ -63,12 +63,3 @@ document.addEventListener('click', (e) => {
         }
     }
 });
-
-// main > temp
-// weather > 0 > description;
-
-/* const temp = console.log(log.main.temp);
-    const weather = console.log(log.weather[0].description);
-    const city = console.log(log.name);
-    const country = console.log(log.sys.country);
-*/

@@ -8,13 +8,14 @@
     </head>
     <body>
         <header>
+            <p id="title">WeatherCheck</p>
             <form id="inputForm" onsubmit='return false'>
-                <input id="inputBox" type="text" placeholder="Enter Your City"></input>
+                <input id="inputBox" type="text" placeholder="Enter Your City">
                 <button id="inputBtn" type="submit">Submit</button>
             </form>
             <div id="tempConversion">
-                <button id="celsiusBtn">C</button>
-                <button id="farenheightBtn">F</button>
+                <button type="button" id="celsiusBtn">C</button>
+                <button type="button" id="farenheightBtn">F</button>
             </div>
         </header>
         <div id="content"></div>

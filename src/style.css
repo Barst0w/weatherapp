@@ -6,35 +6,86 @@ body {
 }
 
 header {
-    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto) 1fr;
+    height: 70px;
     width: auto;
     background-color: lightseagreen;
+}
+
+#content {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
+    grid-template-rows: auto;
 }
 
 #inputForm {
     display: flex;
     justify-content: center;
+    width: 350px;
+    grid-column: 2 / 2;
 }
 
 #inputBox {
-    height: 25px;
+    height: 40px;
+    width: 250px;
     outline: none;
     border: none;
-    margin-right: 5px;
+    margin: 15px 0px 15px 0px;
+    padding: 0px 50px 0px 10px;
+    font-family: 'Roboto';
 }
 
 #inputBtn {
-    height: 25px;
+    height: 40px;
     outline: none;
     border: none;
-    margin-left: 5px;
+    margin: 15px 0px 15px -50px;
+    font-family: 'Roboto';
+}
+
+#tempConversion {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    grid-column: 3 / 3;
+}
+
+#celsiusBtn {
+    height: 30px;
+    width: 40px;
+    outline: none;
+    border: none;
+    margin: 20px 0px 0px 0px;
+    font-family: 'Roboto';
+}
+
+#farenheightBtn {
+    height: 30px;
+    width: 40px;
+    outline: none;
+    border: none;
+    margin: 20px 0px 0px 5px;
+    font-family: 'Roboto';
+}
+
+#title {
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin: 17px 0px 17px 20px;
 }
 
 .dataDiv {
+    display: grid;
     grid-template-rows: auto;
+    grid-row: auto;
+    grid-column: auto;
     height: 250px;
     width: 200px;
     background-color: lightpink;
+    margin: 20px;
+    padding: 5px;
 }
 
 .locationElement {
@@ -43,6 +94,13 @@ header {
     font-family: 'Roboto';
     font-size: 25px;
     grid-row: 1 / 1;
+    margin: 10px 0px 0px 0px;
+}
+
+.divImg {
+    display: flex;
+    justify-self: center;
+    grid-row: 2 / 2;
 }
 
 .tempElement {
@@ -50,6 +108,7 @@ header {
     justify-content: center;
     font-family: 'Roboto';
     font-size: 40px;
+    margin: 0px 0px 10px 0px;
     grid-row: 3 / 3;
 }
 
@@ -58,5 +117,11 @@ header {
     justify-content: center;
     font-family: 'Roboto';
     font-size: 25px;
+    margin: 0px 0px 10px 0px;
     grid-row: 4 / 4;
+    text-transform: capitalize;
+}
+
+#celsiusBtn:hover, #farenheightBtn:hover, #inputBtn:hover {
+    background-color: pink;
 }

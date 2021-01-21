@@ -3,7 +3,7 @@
 const content = document.querySelector('#content');
 // Function that holds all the logic to retrieve data and append it to the main page
 const checkWeather = async (cityInput) => {
-    const weatherData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=1a6c4a4f79fcabdc0967f0e5d8bdbbbb`, { mode: 'cors' });
+    const weatherData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=1a6c4a4f79fcabdc0967f0e5d8bdbbbb`, { mode: 'cors' });
     const log = await weatherData.json();
     // Function for appending all the data retrieved and converted by checkData()
     const dataDiv = (city, country, temp, weather) => {

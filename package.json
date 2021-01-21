@@ -1,12 +1,12 @@
 {
-    "homepage": "http://Barst0w.github.io/weatherapp",
+    "homepage": "http://barst0w.github.io/weatherapp",
     "name": "weatherapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",      
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch"
